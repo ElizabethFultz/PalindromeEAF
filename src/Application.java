@@ -71,7 +71,7 @@ public class Application {
 
 			char letterSecond = stackSecond.pop(); //holds the letters popped from the second sequence stack
 			
-			if(compare(stackFirst.peek(), letterSecond) && !stackSecond.isEmpty()) {
+			if(compare(stackFirst.peek(), letterSecond)) {
 				stackFirst.pop();
 
 			}
@@ -150,7 +150,7 @@ public class Application {
 						
 						char letterSecond = stackSecond.pop(); //holds the letters popped from the second sequence stack
 						
-						while(compare(stackFirst.peek(), letterSecond) && !stackSecond.isEmpty()) {
+						while(compare(stackFirst.peek(), letterSecond)) {
 							stackFirst.pop();
 						}
 						
